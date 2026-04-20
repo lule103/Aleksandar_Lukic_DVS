@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0d1117;
+    color: #c9d1d9;
+    padding: 20px;
+}
+
+.container { max-width: 900px; margin: 0 auto; }
+
+h1 { margin-bottom: 30px; color: #58a6ff; }
+
+.task {
+    padding: 12px;
+    margin: 8px 0;
+    border-left: 4px solid #444;
+    background: #161b22;
+}
+
+.task.completed {
+    border-left-color: #3fb950;
+    color: #3fb950;
+}
+
+.task.in-progress {
+    border-left-color: #d29922;
+    color: #d29922;
+}
+
+.task.pending {
+    border-left-color: #8b949e;
+    color: #8b949e;
+}
+
+.progress-bar { display: inline-block; }
+
+.status { margin-top: 30px; padding: 20px; background: #161b22; }
