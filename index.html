@@ -6,20 +6,64 @@
 </head>
 <body>
     <div class="container">
-        <h1>FPGA Project Progress</h1>
-        
-        <!-- Project tasks -->
-        <div class="task-list">
-            <div class="task completed">HDL Design - Completed</div>
-            <div class="task in-progress">Synthesis - In Progress</div>
-            <div class="task pending">Timing Closure - Pending</div>
-            <div class="task pending">Verification - Pending</div>
+        <h1>FPGA Project Tracker</h1>
+
+        <!-- Overview sekcija -->
+        <div class="overview">
+            <h2>Project Overview</h2>
+
+            <div class="section">
+                <h3>Problem</h3>
+                <p>[Šta problem?]</p>
+            </div>
+
+            <div class="section">
+                <h3>Architecture</h3>
+                <p>[Skica ili opis šeme]</p>
+                <pre class="diagram">
+┌─────────────┐
+│   Input     │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Processor │
+└──────┬──────┘
+       │
+       ▼
+┌─────────────┐
+│   Output    │
+└─────────────┘
+                </pre>
+            </div>
+
+            <div class="section">
+                <h3>Solution</h3>
+                <p>[Kako rešavaš problem]</p>
+            </div>
         </div>
-        
-        <!-- Current status -->
-        <div class="status">
-            <h2>Current Status</h2>
-            <p>Progress: <span class="progress-bar">████░░░░░░</span> 40%</p>
+
+        <!-- Meni -->
+        <div class="menu">
+            <h2>Project Phases</h2>
+            <div class="menu-grid">
+                <a href="hdl-design.html" class="menu-item">
+                    <span class="phase-name">HDL Design</span>
+                    <span class="phase-status">Completed</span>
+                </a>
+                <a href="synthesis.html" class="menu-item">
+                    <span class="phase-name">Synthesis</span>
+                    <span class="phase-status">In Progress</span>
+                </a>
+                <a href="verification.html" class="menu-item">
+                    <span class="phase-name">Verification</span>
+                    <span class="phase-status">Pending</span>
+                </a>
+                <a href="testing.html" class="menu-item">
+                    <span class="phase-name">Testing</span>
+                    <span class="phase-status">Pending</span>
+                </a>
+            </div>
         </div>
     </div>
 </body>
