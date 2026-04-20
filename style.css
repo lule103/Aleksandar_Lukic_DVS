@@ -30,9 +30,6 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo {
@@ -40,53 +37,66 @@ body {
     font-size: 1.5em;
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-menu a {
-    color: #c9d1d9;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 1em;
-}
-
-.nav-menu a:hover {
-    color: #58a6ff;
-}
-
-/* Sekcije */
-.section {
-    min-height: 100vh;
-    padding: 120px 20px 60px 20px;
-    border-bottom: 1px solid #30363d;
-}
-
-.container {
+/* Glavna sekcija */
+.main-section {
+    padding: 100px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.section h2 {
-    color: #58a6ff;
-    font-size: 2.5em;
-    margin-bottom: 40px;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-.section h3 {
+/* Naslovi */
+h2 {
+    color: #58a6ff;
+    font-size: 2.2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #30363d;
+}
+
+h3 {
     color: #79c0ff;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-top: 20px;
     margin-bottom: 15px;
 }
 
-/* Overview specifično */
+/* Status badge */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.status.completed {
+    background: #238636;
+    color: #c9d1d9;
+}
+
+.status.in-progress {
+    background: #9e6a03;
+    color: #c9d1d9;
+}
+
+.status.pending {
+    background: #3d444d;
+    color: #c9d1d9;
+}
+
+/* Overview sekcija */
 .overview-content {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .subsection {
@@ -126,10 +136,10 @@ code, pre {
     border: 1px solid #30363d;
     color: #79c0ff;
     display: block;
+    font-size: 0.9em;
 }
 
 .diagram {
     font-family: 'Courier New', monospace;
-    font-size: 0.9em;
     line-height: 1.2;
 }

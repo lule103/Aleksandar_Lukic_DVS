@@ -9,21 +9,15 @@
     <nav class="navbar">
         <div class="nav-container">
             <h1 class="logo">FPGA Tracker</h1>
-            <ul class="nav-menu">
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#hdl-design">HDL Design</a></li>
-                <li><a href="#synthesis">Synthesis</a></li>
-                <li><a href="#verification">Verification</a></li>
-                <li><a href="#testing">Testing</a></li>
-            </ul>
         </div>
     </nav>
 
-    <!-- Sekcija 1: Overview -->
-    <section id="overview" class="section">
+    <!-- Cela stranica — jedna sekcija -->
+    <section class="main-section">
         <div class="container">
-            <h2>Project Overview</h2>
 
+            <!-- Overview -->
+            <h2 id="overview">Project Overview</h2>
             <div class="overview-content">
                 <div class="subsection">
                     <h3>Problem</h3>
@@ -54,15 +48,11 @@
                     <p>[Kako rešavaš problem]</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Sekcija 2: HDL Design -->
-    <section id="hdl-design" class="section">
-        <div class="container">
-            <h2>HDL Design</h2>
-
+            <!-- HDL Design -->
+            <h2 id="hdl-design">HDL Design</h2>
             <div class="phase-content">
+                <span class="status completed">Completed</span>
                 <h3>Objectives</h3>
                 <ul>
                     <li>[Cilj 1]</li>
@@ -80,15 +70,11 @@ endmodule</code></pre>
                 <h3>Results</h3>
                 <p>[Rezultati]</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Sekcija 3: Synthesis -->
-    <section id="synthesis" class="section">
-        <div class="container">
-            <h2>Synthesis</h2>
-
+            <!-- Synthesis -->
+            <h2 id="synthesis">Synthesis</h2>
             <div class="phase-content">
+                <span class="status in-progress">In Progress</span>
                 <h3>Objectives</h3>
                 <ul>
                     <li>[Cilj 1]</li>
@@ -98,30 +84,22 @@ endmodule</code></pre>
                 <h3>Results</h3>
                 <p>[Rezultati]</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Sekcija 4: Verification -->
-    <section id="verification" class="section">
-        <div class="container">
-            <h2>Verification</h2>
-
+            <!-- Verification -->
+            <h2 id="verification">Verification</h2>
             <div class="phase-content">
+                <span class="status pending">Pending</span>
                 <h3>Testbench</h3>
                 <pre><code>[Testbench kod]</code></pre>
 
                 <h3>Results</h3>
                 <p>[Rezultati]</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Sekcija 5: Testing -->
-    <section id="testing" class="section">
-        <div class="container">
-            <h2>Testing</h2>
-
+            <!-- Testing -->
+            <h2 id="testing">Testing</h2>
             <div class="phase-content">
+                <span class="status pending">Pending</span>
                 <h3>Test Cases</h3>
                 <ul>
                     <li>[Test 1]</li>
@@ -131,6 +109,7 @@ endmodule</code></pre>
                 <h3>Results</h3>
                 <p>[Rezultati]</p>
             </div>
+
         </div>
     </section>
 
