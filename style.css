@@ -4,12 +4,64 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Courier New', monospace;
     background: #0d1117;
     color: #c9d1d9;
-    padding: 20px;
     line-height: 1.6;
+}
+
+/* Fiksni meni na vrhu */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #58a6ff;
+    font-size: 1.5em;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1em;
+}
+
+.nav-menu a:hover {
+    color: #58a6ff;
+}
+
+/* Sekcije */
+.section {
+    min-height: 100vh;
+    padding: 120px 20px 60px 20px;
+    border-bottom: 1px solid #30363d;
 }
 
 .container {
@@ -17,124 +69,35 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+.section h2 {
     color: #58a6ff;
-    margin-bottom: 30px;
     font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
-h2 {
+.section h3 {
     color: #79c0ff;
-    margin-top: 25px;
+    font-size: 1.5em;
+    margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 1.8em;
 }
 
-h3 {
-    color: #a5d6ff;
-    margin-top: 15px;
-    margin-bottom: 10px;
+/* Overview specifično */
+.overview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-/* Overview sekcije */
-.overview {
-    margin-bottom: 50px;
+.subsection {
     padding: 20px;
     background: #161b22;
     border-radius: 6px;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.section p {
-    padding: 10px;
-    background: #0d1117;
     border-left: 3px solid #58a6ff;
 }
 
-/* ASCII diagram */
-.diagram {
-    background: #0d1117;
-    padding: 15px;
-    border-radius: 4px;
-    overflow-x: auto;
-    color: #79c0ff;
-    border: 1px solid #30363d;
-}
-
-/* Meni - Layout sa leve strane */
-.menu-container {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.menu {
-    width: 250px;
-    padding: 20px;
-    background: #161b22;
-    border-radius: 6px;
-    flex-shrink: 0;
-}
-
-.menu h2 {
-    margin-top: 0;
-    font-size: 1.3em;
-}
-
-.menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.menu-item {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background: #0d1117;
-    border: 2px solid #30363d;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.menu-item:hover {
-    border-color: #58a6ff;
-    background: #161b22;
-    transform: translateX(5px);
-}
-
-.phase-name {
-    color: #58a6ff;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.phase-status {
-    font-size: 0.85em;
-    color: #8b949e;
-}
-
-/* Back link */
-.back-link {
-    display: inline-block;
-    color: #58a6ff;
-    text-decoration: none;
-    margin-bottom: 20px;
-    padding: 8px 12px;
-    border: 1px solid #58a6ff;
-    border-radius: 4px;
-    transition: all 0.2s;
-}
-
-.back-link:hover {
-    background: #58a6ff;
-    color: #0d1117;
+.subsection p {
+    color: #c9d1d9;
 }
 
 /* Phase content */
@@ -150,7 +113,7 @@ h3 {
 }
 
 .phase-content li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #c9d1d9;
 }
 
@@ -162,8 +125,11 @@ code, pre {
     overflow-x: auto;
     border: 1px solid #30363d;
     color: #79c0ff;
+    display: block;
 }
 
-code {
-    padding: 3px 6px;
+.diagram {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    line-height: 1.2;
 }

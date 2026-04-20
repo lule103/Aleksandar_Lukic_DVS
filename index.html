@@ -5,69 +5,134 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>FPGA Project Tracker</h1>
+    <!-- Fiksni meni na vrhu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">FPGA Tracker</h1>
+            <ul class="nav-menu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#hdl-design">HDL Design</a></li>
+                <li><a href="#synthesis">Synthesis</a></li>
+                <li><a href="#verification">Verification</a></li>
+                <li><a href="#testing">Testing</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <!-- Overview sekcija -->
-        <div class="overview">
+    <!-- Sekcija 1: Overview -->
+    <section id="overview" class="section">
+        <div class="container">
             <h2>Project Overview</h2>
 
-            <div class="section">
-                <h3>Problem</h3>
-                <p>[Šta problem?]</p>
-            </div>
+            <div class="overview-content">
+                <div class="subsection">
+                    <h3>Problem</h3>
+                    <p>[Šta problem?]</p>
+                </div>
 
-            <div class="section">
-                <h3>Architecture</h3>
-                <p>[Skica ili opis šeme]</p>
-                <pre class="diagram">
+                <div class="subsection">
+                    <h3>Architecture</h3>
+                    <pre class="diagram">
 ┌─────────────┐
 │   Input     │
 └──────┬──────┘
        │
        ▼
 ┌─────────────┐
-│   Processor │
+│ Processor   │
 └──────┬──────┘
        │
        ▼
 ┌─────────────┐
 │   Output    │
 └─────────────┘
-                </pre>
-            </div>
+                    </pre>
+                </div>
 
-            <div class="section">
-                <h3>Solution</h3>
-                <p>[Kako rešavaš problem]</p>
+                <div class="subsection">
+                    <h3>Solution</h3>
+                    <p>[Kako rešavaš problem]</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Meni -->
-        <!-- Meni -->
-        <div class="menu-container">
-            <div class="menu">
-                <h2>Project Phases</h2>
-                <nav class="menu-list">
-                    <a href="hdl-design.html" class="menu-item">
-                        <span class="phase-name">HDL Design</span>
-                        <span class="phase-status">Completed</span>
-                    </a>
-                    <a href="synthesis.html" class="menu-item">
-                        <span class="phase-name">Synthesis</span>
-                        <span class="phase-status">In Progress</span>
-                    </a>
-                    <a href="verification.html" class="menu-item">
-                        <span class="phase-name">Verification</span>
-                        <span class="phase-status">Pending</span>
-                    </a>
-                    <a href="testing.html" class="menu-item">
-                        <span class="phase-name">Testing</span>
-                        <span class="phase-status">Pending</span>
-                    </a>
-                </nav>
+    <!-- Sekcija 2: HDL Design -->
+    <section id="hdl-design" class="section">
+        <div class="container">
+            <h2>HDL Design</h2>
+
+            <div class="phase-content">
+                <h3>Objectives</h3>
+                <ul>
+                    <li>[Cilj 1]</li>
+                    <li>[Cilj 2]</li>
+                </ul>
+
+                <h3>Implementation</h3>
+                <pre><code>module my_module (
+    input clk,
+    input reset,
+    output [7:0] data_out
+);
+endmodule</code></pre>
+
+                <h3>Results</h3>
+                <p>[Rezultati]</p>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Sekcija 3: Synthesis -->
+    <section id="synthesis" class="section">
+        <div class="container">
+            <h2>Synthesis</h2>
+
+            <div class="phase-content">
+                <h3>Objectives</h3>
+                <ul>
+                    <li>[Cilj 1]</li>
+                    <li>[Cilj 2]</li>
+                </ul>
+
+                <h3>Results</h3>
+                <p>[Rezultati]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcija 4: Verification -->
+    <section id="verification" class="section">
+        <div class="container">
+            <h2>Verification</h2>
+
+            <div class="phase-content">
+                <h3>Testbench</h3>
+                <pre><code>[Testbench kod]</code></pre>
+
+                <h3>Results</h3>
+                <p>[Rezultati]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcija 5: Testing -->
+    <section id="testing" class="section">
+        <div class="container">
+            <h2>Testing</h2>
+
+            <div class="phase-content">
+                <h3>Test Cases</h3>
+                <ul>
+                    <li>[Test 1]</li>
+                    <li>[Test 2]</li>
+                </ul>
+
+                <h3>Results</h3>
+                <p>[Rezultati]</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
