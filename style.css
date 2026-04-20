@@ -64,25 +64,37 @@ h3 {
     border: 1px solid #30363d;
 }
 
-/* Meni */
-.menu {
+/* Meni - Layout sa leve strane */
+.menu-container {
+    display: flex;
+    gap: 30px;
     margin-top: 40px;
-    padding: 30px;
-    background: #161b22;
-    border-radius: 6px;
 }
 
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+.menu {
+    width: 250px;
+    padding: 20px;
+    background: #161b22;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.menu h2 {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .menu-item {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 15px;
     background: #0d1117;
     border: 2px solid #30363d;
     border-radius: 6px;
@@ -94,17 +106,17 @@ h3 {
 .menu-item:hover {
     border-color: #58a6ff;
     background: #161b22;
-    transform: translateY(-2px);
+    transform: translateX(5px);
 }
 
 .phase-name {
     color: #58a6ff;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .phase-status {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #8b949e;
 }
 
